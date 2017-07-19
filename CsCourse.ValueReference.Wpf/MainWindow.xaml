@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CsCourse.ValueReference.Wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="Value &amp; Reference Examples" Height="290" Width="337">
+    <DockPanel>
+        <TextBlock DockPanel.Dock="Top" Padding="10" TextAlignment="Center">
+            Check Output windows for results!
+        </TextBlock>
+        <GroupBox Header="Mission Control">
+            <WrapPanel Orientation="Vertical">
+                <Button x:Name="btnCopyValueType" Content="Copy Value Type" Margin="10,5" Click="btnCopyValueType_Click"></Button>
+                <Button x:Name="btnCopyValueTypeEnum" Content="Copy Enum (Value)" Margin="10,5" Click="btnCopyValueTypeEnum_Click"></Button>
+                <Button x:Name="btnCopyValueTypeStruct" Content="Copy Struct (Value)" Margin="10,5" Click="btnCopyValueTypeStruct_Click"></Button>
+                <Button x:Name="btnCopyReferenceType" Content="Copy Class Instance (Ref)" Margin="10,5" Click="btnCopyReferenceType_Click"></Button>
+                <Button x:Name="btnCopyReferenceTypeString" Content="Copy String Instance (Ref)" Margin="10,5" Click="btnCopyReferenceTypeString_Click"></Button>
+                <Button x:Name="btnPassValueType" Content="Pass argument by Value" Margin="10,5" Click="btnPassValueType_Click"></Button>
+                <Button x:Name="btnPassValueTypeByRef" Content="Pass argument by Ref" Margin="10,5" Click="btnPassValueTypeByRef_Click"></Button>
+                <Button x:Name="btnOutputParameter" Content="Pass output parameter" Margin="10,5" Click="btnOutputParameter_Click"></Button>
+                <Button x:Name="btnBoxing" Content="Boxing" Margin="10,5" Click="btnBoxing_Click"></Button>
+                <Button x:Name="btnUnboxing" Content="Unboxing" Margin="10,5" Click="btnUnboxing_Click"></Button>
+                <Button x:Name="btnSafeCasting" Content="Safecasting" Margin="10,5" Click="btnSafeCasting_Click"></Button>
+            </WrapPanel>
+        </GroupBox>
+    </DockPanel>
 </Window>
